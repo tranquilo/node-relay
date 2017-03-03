@@ -13,6 +13,7 @@ try {
       process.exit(code);
     });
 } catch (e) {
+  //console.error(e);
   log.err('no such command "' + cmd + '"');
   log.bug(e.stack);
   process.exit(-1);
